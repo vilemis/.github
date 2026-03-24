@@ -1,24 +1,22 @@
 # VilémIS
 
-**CRM pro freelancery a malé agentury — open source, bez předplatného**
+**CRM pro freelancery — open source, bez předplatného**
 
 Spravujte klienty, projekty, faktury a čas na jednom místě. Žádné měsíční poplatky, žádný vendor lock-in — prostě nainstalujte a používejte.
 
 ## Pro koho je VilémIS?
 
-- **Freelancery** — fakturace, sledování hodin, přehled klientů a projektů
-- **Malé agentury** — sdílení projektů v týmu, správa úkolů, know-how wiki
-- **Vývojáře** — snadné rozšíření, vlastní entity, Docker setup za 5 minut
+Pro **freelancery**, kteří potřebují mít přehled o svých klientech, projektech a financích — bez zbytečně složitých systémů a bez placení za každého uživatele.
 
 ## Co řeší
 
-| Problém | Řešení v VilémIS |
-|---------|-----------------|
+| Problém freelancera | Řešení v VilémIS |
+|---------------------|-----------------|
 | Kde mám ty hodiny od klienta? | Časové záznamy per projekt/úkol |
 | Faktura za tento měsíc? | Generování faktur z odpracovaného času |
 | Co jsme s klientem řešili? | Historie emailů, komentářů a aktivit |
-| Kde je ta smlouva? | Přílohy a dokumenty u klienta/projektu |
-| Jak sdílet know-how v týmu? | Interní wiki přímo v systému |
+| Kde je ta smlouva / přihlašovací údaje? | Přílohy a šifrovaný heslovník u klienta |
+| Neztratit se v desítkách klientů najednou | Přehledný dashboard s financemi a aktivitami |
 
 ## Rychlý start
 
@@ -38,9 +36,9 @@ Systém běží na `http://localhost:3000`. Databáze, backend i Redis se spust�
 - Sledování času a opakující se úkoly
 - Faktury, nabídky, náklady
 - Integrovaná emailová schránka (IMAP/SMTP)
+- Šifrovaný heslovník pro přihlašovací údaje klientů
 - Vlastní datové typy (custom entities)
 - Dashboard s přehledem financí a aktivit
-- Heslovník (šifrovaný) pro přihlašovací údaje klientů
 
 ## Technologie
 
