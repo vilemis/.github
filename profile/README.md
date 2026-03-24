@@ -1,29 +1,26 @@
 # VilémIS
 
-**Opensource CRM a systém pro správu projektů**
+**CRM pro freelancery a malé agentury — open source, bez předplatného**
 
-Česká open-source alternativa k velkým CRM platformám — postavená na React frontendu a PHP backendu s důrazem na jednoduchost a přizpůsobitelnost.
+Spravujte klienty, projekty, faktury a čas na jednom místě. Žádné měsíční poplatky, žádný vendor lock-in — prostě nainstalujte a používejte.
 
-## Co VilémIS umí
+## Pro koho je VilémIS?
 
-- **Klienti & projekty** — správa kontaktů, firem a projektů na jednom místě
-- **Úkoly & čas** — sledování úkolů, časové záznamy, opakující se úkoly
-- **Faktury & nabídky** — tvorba faktur, nabídek a sledování plateb
-- **E-mail** — integrovaná emailová schránka s pravidly a šablonami
-- **Know-how** — interní wiki pro sdílení znalostí týmu
-- **Vlastní entity** — flexibilní tvorba vlastních datových typů
-- **Dashboard** — přehledový panel s grafy a statistikami
+- **Freelancery** — fakturace, sledování hodin, přehled klientů a projektů
+- **Malé agentury** — sdílení projektů v týmu, správa úkolů, know-how wiki
+- **Vývojáře** — snadné rozšíření, vlastní entity, Docker setup za 5 minut
 
-## Technologie
+## Co řeší
 
-| Vrstva | Technologie |
-|--------|------------|
-| Frontend | React 19, React Router 7, Bootstrap 5, Material UI |
-| Backend | PHP 8+, Gephart Framework, JWT |
-| Databáze | MariaDB 10.11 |
-| Infrastruktura | Docker, Redis |
+| Problém | Řešení v VilémIS |
+|---------|-----------------|
+| Kde mám ty hodiny od klienta? | Časové záznamy per projekt/úkol |
+| Faktura za tento měsíc? | Generování faktur z odpracovaného času |
+| Co jsme s klientem řešili? | Historie emailů, komentářů a aktivit |
+| Kde je ta smlouva? | Přílohy a dokumenty u klienta/projektu |
+| Jak sdílet know-how v týmu? | Interní wiki přímo v systému |
 
-## Začít je snadné
+## Rychlý start
 
 ```bash
 git clone https://github.com/vilemis/vilemis.git
@@ -33,9 +30,21 @@ cp api/v1/config/security.json--default api/v1/config/security.json
 docker-compose up && npm install && npm start
 ```
 
-## Přispívání
+Systém běží na `http://localhost:3000`. Databáze, backend i Redis se spustí automaticky přes Docker.
 
-Příspěvky jsou vítány! Viz [CONTRIBUTING](https://github.com/vilemis/vilemis#přispívání) v hlavním repozitáři.
+## Funkce
+
+- Klienti, kontakty, projekty, úkoly
+- Sledování času a opakující se úkoly
+- Faktury, nabídky, náklady
+- Integrovaná emailová schránka (IMAP/SMTP)
+- Vlastní datové typy (custom entities)
+- Dashboard s přehledem financí a aktivit
+- Heslovník (šifrovaný) pro přihlašovací údaje klientů
+
+## Technologie
+
+React 19 · PHP 8+ · MariaDB 10.11 · Docker · MIT licence
 
 ---
 
